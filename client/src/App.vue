@@ -6,7 +6,7 @@ import Home from './components/home.vue'
 
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://resto-wl-production.up.railway.app'
 
 export default {
   data() {

@@ -31,11 +31,11 @@
           :class="{ hidden: !asideOpen }"
         >
           <a
-            href="#"
+            @click.prevent="changeSection('')"
             class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600"
           >
             <span class="text-2xl"><i class="bx bx-home"></i></span>
-            <span>Dashboard</span>
+            <span>home</span>
           </a>
           <a
             @click.prevent="changeSection('newCuisine')"
@@ -64,13 +64,7 @@
           <br />
 
           <hr />
-          <a
-            href="#"
-            class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600"
-          >
-            <span class="text-2xl"><i class="bx bx-user"></i></span>
-            <span>Profile</span>
-          </a>
+
           <a
             @click.prevent="doLogout"
             class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600 cursor-pointer"
